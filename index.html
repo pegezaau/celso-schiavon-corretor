@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celso Schiavon — Corretor de Imóveis em Ribeirão Preto | CRECI 235404F</title>
+<meta name="description" content="Celso Schiavon, corretor de imóveis em Ribeirão Preto/SP. Lançamentos, compra e venda com uma consultoria personalizada. CRECI 235404F.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0a1526; --navy2:#0e1e38; --navy3:#122544;
+    --gold:#c9a24b; --gold2:#e6c878; --ink:#eef1f6; --mut:#a7b2c4;
+    --card:#101f38; --line:rgba(201,162,75,.28);
+    --wa:#22c15e; --wa-d:#128c4b;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--navy);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:560px;margin:0 auto;padding:0 20px}
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:rgba(10,21,38,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .hrow{display:flex;align-items:center;gap:12px;padding:12px 20px;max-width:560px;margin:0 auto}
+  .mono{width:40px;height:40px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--gold);font-size:15px;letter-spacing:.5px;flex:none}
+  .hname{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;line-height:1.15}
+  .hsub{font-size:11px;color:var(--mut);letter-spacing:.4px}
+  .hbtn{margin-left:auto;background:var(--wa);color:#fff;font-weight:600;font-size:13px;padding:9px 14px;border-radius:999px;display:flex;align-items:center;gap:6px;flex:none}
+  .hbtn svg{width:16px;height:16px;fill:#fff}
+  /* hero */
+  .hero{position:relative;background:linear-gradient(180deg,var(--navy2),var(--navy))}
+  .hero-img{width:100%;height:430px;object-fit:cover;object-position:center 18%;display:block}
+  .hero-fade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,21,38,.18) 0%,rgba(10,21,38,0) 34%,rgba(10,21,38,.72) 74%,var(--navy) 100%)}
+  .hero-txt{position:relative;margin-top:-118px;padding-bottom:8px}
+  .badge{display:inline-block;border:1px solid var(--gold);color:var(--gold2);font-size:11px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:rgba(10,21,38,.65)}
+  .hero h1{font-size:42px;line-height:1.08;font-weight:700;margin:14px 0 4px}
+  .hero h1 span{color:var(--gold2)}
+  .hero .role{font-size:15px;color:var(--ink);font-weight:500}
+  .hero .slogan{font-family:'Playfair Display',serif;font-style:italic;font-size:19px;color:var(--gold2);margin-top:12px}
+  .hero .sub{color:var(--mut);font-size:14.5px;margin-top:8px;max-width:44ch}
+  .cta-row{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:12px;transition:transform .15s ease}
+  .btn:active{transform:scale(.97)}
+  .btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 22px rgba(34,193,94,.28)}
+  .btn-wa svg{width:19px;height:19px;fill:#fff}
+  .btn-ghost{border:1px solid var(--gold);color:var(--gold2);background:rgba(201,162,75,.06)}
+  .trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+  .trust div{flex:1;min-width:100px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-align:center}
+  .trust b{display:block;font-size:13.5px;color:var(--gold2)}
+  .trust span{font-size:11.5px;color:var(--mut)}
+  /* sections */
+  section{padding:38px 0 6px}
+  .kicker{font-size:11.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
+  h2{font-size:27px;line-height:1.2;margin:8px 0 10px;font-weight:600}
+  .lead{color:var(--mut);font-size:15px}
+  .cards{display:grid;gap:14px;margin-top:18px}
+  .card{background:linear-gradient(180deg,var(--card),var(--navy2));border:1px solid var(--line);border-radius:16px;padding:20px}
+  .card .tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--navy);background:linear-gradient(90deg,var(--gold),var(--gold2));padding:4px 9px;border-radius:6px}
+  .card h3{font-size:20px;margin:10px 0 6px}
+  .card p{color:var(--mut);font-size:14px}
+  .card a{display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:#4ade80;font-weight:600;font-size:14px}
+  .card a svg{width:16px;height:16px;fill:#4ade80}
+  /* sobre */
+  .sobre{background:linear-gradient(180deg,var(--navy2),var(--navy3));border:1px solid var(--line);border-radius:18px;padding:24px 20px;margin-top:18px}
+  .sobre .frase{font-family:'Playfair Display',serif;font-style:italic;font-size:21px;color:var(--gold2);line-height:1.35}
+  .sobre p{color:var(--mut);font-size:14.5px;margin-top:12px}
+  .sobre ul{list-style:none;margin-top:14px;display:grid;gap:9px}
+  .sobre li{font-size:14.5px;display:flex;gap:9px;align-items:flex-start}
+  .sobre li::before{content:"◆";color:var(--gold);font-size:11px;margin-top:4px}
+  /* simulador */
+  .sim{background:linear-gradient(180deg,var(--navy3),var(--navy2));border:1px solid var(--gold);border-radius:18px;padding:22px 20px;margin-top:18px}
+  .sim label{font-size:12.5px;font-weight:600;color:var(--mut);display:block;margin:14px 0 6px;letter-spacing:.3px}
+  .sim label:first-of-type{margin-top:6px}
+  .sim input{width:100%;background:var(--navy);border:1px solid var(--line);border-radius:10px;color:var(--ink);font-size:16px;padding:12px 14px;font-family:'Inter',sans-serif}
+  .sim input:focus{outline:2px solid var(--gold);border-color:transparent}
+  .sim .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .sim .out{margin-top:18px;background:rgba(10,21,38,.65);border:1px dashed var(--line);border-radius:12px;padding:16px;display:none}
+  .sim .out.show{display:block}
+  .sim .out .row{display:flex;justify-content:space-between;font-size:14px;padding:5px 0;color:var(--mut)}
+  .sim .out .row b{color:var(--ink);font-weight:600}
+  .sim .out .row.hl b{color:var(--gold2);font-size:16px}
+  .sim .note{font-size:11.5px;color:var(--mut);margin-top:12px}
+  .sim .btn-wa{width:100%;justify-content:center;margin-top:14px;border:none;cursor:pointer;font-family:'Inter',sans-serif}
+  /* passos */
+  .steps{display:grid;gap:12px;margin-top:18px}
+  .step{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .step .n{width:34px;height:34px;flex:none;border-radius:50%;background:linear-gradient(135deg,var(--gold),#9a7a2e);color:var(--navy);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px}
+  .step h3{font-size:16.5px;margin-bottom:2px}
+  .step p{color:var(--mut);font-size:13.5px}
+  /* faq */
+  .faq{margin-top:16px;display:grid;gap:10px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0 16px}
+  summary{cursor:pointer;font-weight:600;font-size:15px;padding:15px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--gold);font-size:20px;font-weight:400}
+  details[open ] summary::after{content:"–"}
+  details p{color:var(--mut);font-size:14px;padding:0 0 16px}
+  /* final */
+  .final{background:linear-gradient(160deg,var(--navy3),var(--navy2));border:1px solid var(--gold);border-radius:20px;padding:28px 22px;text-align:center;margin:38px 0 8px}
+  .final h2{margin-top:0}
+  .final p{color:var(--mut);font-size:14.5px;margin-bottom:18px}
+  footer{padding:26px 0 96px;text-align:center;color:var(--mut);font-size:12.5px}
+  footer .fname{font-family:'Playfair Display',serif;font-size:16px;color:var(--ink)}
+  footer a{color:var(--gold2)}
+  .float{position:fixed;right:16px;bottom:16px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(0,0,0,.45)}
+  .float svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <div class="mono">CS</div>
+    <div>
+      <div class="hname">Celso Schiavon</div>
+      <div class="hsub">CORRETOR DE IMÓVEIS · CRECI 235404F</div>
+    </div>
+    <a class="hbtn" href="https://wa.me/5516993031331?text=Ol%C3%A1%2C%20Celso!%20Vim%20pela%20sua%20p%C3%A1gina%20e%20quero%20conversar%20sobre%20um%20im%C3%B3vel." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.6-.7c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</header>
+
+<div class="hero">
+  <img class="hero-img" src="foto-celso.jpg" alt="Celso Schiavon, corretor de imóveis em Ribeirão Preto">
+  <div class="hero-fade"></div>
+  <div class="wrap hero-txt">
+    <span class="badge">Ribeirão Preto · SP</span>
+    <h1>Celso <span>Schiavon</span></h1>
+    <div class="role">Corretor de imóveis · CRECI 235404F</div>
+    <div class="slogan">“Uma consultoria personalizada”</div>
+    <p class="sub">Seu próximo imóvel começa com uma boa escolha. Lançamentos, compra e venda com acompanhamento completo — da primeira conversa à escritura.</p>
+    <div class="cta-row">
+      <a class="btn btn-wa" href="https://wa.me/5516993031331?text=Ol%C3%A1%2C%20Celso!%20Vim%20pela%20sua%20p%C3%A1gina%20e%20quero%20conversar%20sobre%20um%20im%C3%B3vel." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.6-.7c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+        Falar no WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="#simulador">Simular financiamento</a>
+    </div>
+    <div class="trust">
+      <div><b>CRECI 235404F</b><span>Corretor credenciado</span></div>
+      <div><b>Lançamentos</b><span>Novos e usados</span></div>
+      <div><b>Compra e Venda</b><span>Consultoria completa</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="atuacao">
+  <div class="wrap">
+    <div class="kicker">Atuação</div>
+    <h2>Lançamentos e os melhores imóveis de Ribeirão Preto</h2>
+    <p class="lead">Trabalho com os principais lançamentos da cidade e com compra e venda de imóveis novos e usados — sempre com análise personalizada do seu perfil e do seu momento.</p>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">Lançamentos</span>
+        <h3>Cerqueira 2164 · Riverside MB · MB Park</h3>
+        <p>Condições de lançamento, tabelas atualizadas e as melhores unidades de cada empreendimento — apresentados com transparência, na planta ou em obras.</p>
+        <a href="https://wa.me/5516993031331?text=Ol%C3%A1%2C%20Celso!%20Quero%20conhecer%20as%20condi%C3%A7%C3%B5es%20dos%20lan%C3%A7amentos%20em%20Ribeir%C3%A3o%20Preto." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.6-.7c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+          Pedir condições dos lançamentos
+        </a>
+      </div>
+      <div class="card">
+        <span class="tag">Comprar</span>
+        <h3>Comprar com segurança</h3>
+        <p>Entendo o que você procura, seleciono as opções certas e conduzo visitas, proposta e negociação — até a assinatura e a entrega das chaves.</p>
+        <a href="https://wa.me/5516993031331?text=Ol%C3%A1%2C%20Celso!%20Estou%20procurando%20um%20im%C3%B3vel%20para%20comprar%20em%20Ribeir%C3%A3o%20Preto." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.6-.7c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+          Quero comprar um imóvel
+        </a>
+      </div>
+      <div class="card">
+        <span class="tag">Vender</span>
+        <h3>Vender pelo valor certo</h3>
+        <p>Avaliação realista do seu imóvel, divulgação para a minha rede de compradores e negociação conduzida por mim do início ao fim.</p>
+        <a href="https://wa.me/5516993031331?text=Ol%C3%A1%2C%20Celso!%20Quero%20vender%20meu%20im%C3%B3vel%20e%20gostaria%20de%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.6-.7c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+          Quero vender meu imóvel
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap">
+    <div class="kicker">Consultoria personalizada</div>
+    <h2>Atendimento de quem conhece Ribeirão Preto</h2>
+    <div class="sobre">
+      <div class="frase">“Seu sonho, meu compromisso!”</div>
+      <p>Comprar ou vender um imóvel é uma das decisões mais importantes da vida. O meu trabalho é torná-la simples e segura: você fala sempre comigo, do primeiro contato à escritura.</p>
+      <ul>
+        <li>Seleção de imóveis feita para o seu perfil — sem perda de tempo</li>
+        <li>Tabelas e condições de lançamento explicadas com clareza</li>
+        <li>Simulação de financiamento e apoio em todo o processo</li>
+        <li>Negociação e documentação acompanhadas de perto</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="simulador">
+  <div class="wrap">
+    <div class="kicker">Simulador</div>
+    <h2>Quanto ficaria o seu financiamento?</h2>
+    <p class="lead">Faça uma simulação rápida nos sistemas Price e SAC e receba os valores no seu WhatsApp.</p>
+    <div class="sim">
+      <label for="valor">Valor do imóvel (R$)</label>
+      <input id="valor" type="text" inputmode="numeric" value="500.000">
+      <div class="grid2">
+        <div>
+          <label for="entrada">Entrada (R$)</label>
+          <input id="entrada" type="text" inputmode="numeric" value="100.000">
+        </div>
+        <div>
+          <label for="prazo">Prazo (meses)</label>
+          <input id="prazo" type="number" inputmode="numeric" value="360" min="12" max="420">
+        </div>
+      </div>
+      <label for="taxa">Taxa de juros (% ao ano)</label>
+      <input id="taxa" type="text" inputmode="decimal" value="10,5">
+      <button class="btn btn-wa" id="btn-sim" type="button">Calcular simulação</button>
+      <div class="out" id="out">
+        <div class="row"><span>Valor financiado</span><b id="o-fin"></b></div>
+        <div class="row hl"><span>Parcela (Price)</span><b id="o-price"></b></div>
+        <div class="row"><span>1ª parcela (SAC)</span><b id="o-sac1"></b></div>
+        <div class="row"><span>Última parcela (SAC)</span><b id="o-sacn"></b></div>
+        <a class="btn btn-wa" id="btn-enviar" href="#" target="_blank" rel="noopener" style="display:flex">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.6-.7c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+          Enviar esta simulação ao Celso
+        </a>
+      </div>
+      <p class="note">Simulação estimativa, sem valor contratual. As condições reais dependem do banco, do perfil do comprador e do empreendimento.</p>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="wrap">
+    <div class="kicker">Como funciona</div>
+    <h2>Da primeira conversa às chaves</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><h3>Conversa no WhatsApp</h3><p>Você me conta o que procura (ou o que quer vender) e o seu momento.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h3>Seleção personalizada</h3><p>Receba só os imóveis que fazem sentido para você — incluindo lançamentos.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h3>Visitas acompanhadas</h3><p>Conheça os imóveis comigo e tire todas as dúvidas na hora.</p></div></div>
+      <div class="step"><div class="n">4</div><div><h3>Proposta e financiamento</h3><p>Negociação conduzida por mim e apoio completo no crédito imobiliário.</p></div></div>
+      <div class="step"><div class="n">5</div><div><h3>Contrato e escritura</h3><p>Documentação acompanhada de perto até a entrega das chaves.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="kicker">Dúvidas frequentes</div>
+    <h2>Perguntas e respostas</h2>
+    <div class="faq">
+      <details>
+        <summary>Vale a pena comprar em lançamento?</summary>
+        <p>Em geral, sim: preço de tabela inicial, pagamento da entrada parcelado durante a obra e potencial de valorização até a entrega. Eu apresento as condições completas de cada empreendimento para você decidir com os números na mão.</p>
+      </details>
+      <details>
+        <summary>Você ajuda com o financiamento?</summary>
+        <p>Sim. Faço a simulação (Price e SAC), explico as diferenças e acompanho o processo junto ao banco até a aprovação do crédito.</p>
+      </details>
+      <details>
+        <summary>Quero vender meu imóvel. Como funciona?</summary>
+        <p>Começamos com uma avaliação realista do seu imóvel. Depois, divulgo para a minha rede de compradores, conduzo as visitas e a negociação, e acompanho contrato e escritura.</p>
+      </details>
+      <details>
+        <summary>Quais regiões você atende?</summary>
+        <p>Atendo Ribeirão Preto e região, com foco nos principais lançamentos da cidade e em imóveis novos e usados de compra e venda.</p>
+      </details>
+      <details>
+        <summary>O atendimento é personalizado mesmo?</summary>
+        <p>Sim — é o meu compromisso. Você fala sempre diretamente comigo, Celso Schiavon, CRECI 235404F, em todas as etapas: busca, visitas, proposta, financiamento e escritura.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="final">
+    <h2>Vamos conversar sobre o seu próximo imóvel?</h2>
+    <p>Chame no WhatsApp e receba uma consultoria personalizada, sem compromisso.</p>
+    <a class="btn btn-wa" href="https://wa.me/5516993031331?text=Ol%C3%A1%2C%20Celso!%20Vim%20pela%20sua%20p%C3%A1gina%20e%20quero%20uma%20consultoria%20sobre%20im%C3%B3veis." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.6-.7c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+      Chamar no WhatsApp
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fname">Celso Schiavon</div>
+    <div>Corretor de imóveis · Ribeirão Preto/SP · CRECI 235404F</div>
+    <div style="margin-top:6px">WhatsApp (16) 99303-1331 · Instagram <a href="https://www.instagram.com/celso_schiavon" target="_blank" rel="noopener">@celso_schiavon</a></div>
+    <div style="margin-top:10px">“Seu próximo imóvel começa com uma boa escolha.”</div>
+  </div>
+</footer>
+
+<a class="float" href="https://wa.me/5516993031331?text=Ol%C3%A1%2C%20Celso!%20Vim%20pela%20sua%20p%C3%A1gina%20e%20quero%20conversar%20sobre%20um%20im%C3%B3vel." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.6-.7c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+(function(){
+  var WA = 'https://wa.me/5516993031331';
+  function parseNum(v){
+    if(typeof v !== 'string') v = String(v);
+    v = v.replace(/[^\d,.-]/g,'').replace(/\./g,'').replace(',', '.');
+    var n = parseFloat(v);
+    return isNaN(n) ? 0 : n;
+  }
+  function brl(n){
+    return n.toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:2});
+  }
+  function simular(){
+    var valor = parseNum(document.getElementById('valor').value);
+    var entrada = parseNum(document.getElementById('entrada').value);
+    var n = parseInt(document.getElementById('prazo').value, 10);
+    var taxaAno = parseNum(document.getElementById('taxa').value);
+    if(valor <= 0 || n <= 0){ return; }
+    if(entrada < 0) entrada = 0;
+    if(entrada >= valor) entrada = valor * 0.2;
+    var pv = valor - entrada;
+    var i = taxaAno / 100 / 12;
+    var price, sac1, sacn;
+    if(i <= 0){
+      price = pv / n; sac1 = pv / n; sacn = pv / n;
+    } else {
+      price = pv * i / (1 - Math.pow(1 + i, -n));
+      var amort = pv / n;
+      sac1 = amort + pv * i;
+      sacn = amort + amort * i;
+    }
+    document.getElementById('o-fin').textContent = brl(pv);
+    document.getElementById('o-price').textContent = brl(price);
+    document.getElementById('o-sac1').textContent = brl(sac1);
+    document.getElementById('o-sacn').textContent = brl(sacn);
+    document.getElementById('out').classList.add('show');
+    var msg = 'Olá, Celso! Fiz uma simulação na sua página:\n' +
+      '• Valor do imóvel: ' + brl(valor) + '\n' +
+      '• Entrada: ' + brl(entrada) + '\n' +
+      '• Financiado: ' + brl(pv) + ' em ' + n + ' meses\n' +
+      '• Parcela Price: ' + brl(price) + '\n' +
+      '• SAC: 1ª de ' + brl(sac1) + ' e última de ' + brl(sacn) + '\n' +
+      'Pode me ajudar com as condições reais?';
+    document.getElementById('btn-enviar').href = WA + '?text=' + encodeURIComponent(msg);
+  }
+  document.getElementById('btn-sim').addEventListener('click', simular);
+})();
+</script>
+</body>
+</html>
